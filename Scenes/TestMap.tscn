@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/TileSet1.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/prefabs/Player.tscn" type="PackedScene" id=2]
+
+
+[node name="TileMap" type="TileMap"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 65538, 1, 0, 65539, 1, 0, 65540, 1, 0, 65541, 1, 0, 65542, 1, 0, 65543, 1, 0, 65544, 1, 0, 65545, 1, 0, 131075, 50, 0, 131076, 36, 0, 131077, 37, 0, 131078, 38, 0, 131079, 37, 0, 131080, 39, 0, 131081, 50, 0, 196611, 50, 0, 196612, 43, 0, 196613, 42, 0, 196614, 42, 0, 196615, 42, 0, 196616, 40, 0, 196617, 50, 0, 262146, 12, 0, 262147, 50, 0, 262148, 44, 0, 262149, 45, 0, 262150, 46, 0, 262151, 45, 0, 262152, 47, 0, 262153, 50, 0, 327682, 9, 0, 327683, 50, 0, 327684, 50, 0, 327685, 50, 0, 327686, 50, 0, 327687, 50, 0, 327688, 50, 0, 327689, 50, 0 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 63.3954, 33.2071 )
